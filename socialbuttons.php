@@ -20,7 +20,7 @@ function add_social_share_icons($content)
         $html = $html . "<div class='facenama'><a target='_blank' href='http://facenama.com/links/?url=" . $url . "'>Facenama</a></div>";
     }
 
-    if(get_option("social-share-facenama") == 1)
+    if(get_option("social-share-hammihan") == 1)
     {
         $html = $html . "<div class='hammihan'><a target='_blank' href='http://facenama.com/links/?url=" . $url . "'>Hammihan</a></div>";
     }
