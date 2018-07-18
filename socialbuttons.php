@@ -1,7 +1,7 @@
 <?php
 function add_social_share_icons($content)
 {
-    $html = "<div class='social-share-wrapper'><div class='share-on'>Share on: </div>";
+    $html = "<div class='social-share-wrapper'><div class='share-on'>".__('Share on:')." </div>";
 
     global $post;
 
@@ -11,39 +11,48 @@ function add_social_share_icons($content)
 
      if(get_option("social-share-cloob") == 1)
     {
-        $html = $html . "<div class='cloob'><a target='_blank' href='http://www.cloob.com/share/link/add?url=" . $url . "'>Cloob</a></div>";
+        $html = $html . "<div class='cloob'><a target='_blank' href='http://www.cloob.com/share/link/add?url=" . $url . "'><img   title='".__('Cloob')."' class='click-icons' alt='".__('Cloob:')."' src='".plugins_url('img/cloob.png', __FILE__)."' ></a></div>";
     }
 
 
      if(get_option("social-share-facenama") == 1)
     {
-        $html = $html . "<div class='facenama'><a target='_blank' href='http://facenama.com/links/?url=" . $url . "'>Facenama</a></div>";
+        $html = $html . "<div class='facenama'><a target='_blank' href='http://facenama.com/links/?url=" . $url . "'><img   title='".__('Facenama')."' class='click-icons' alt='".__('Facenama:')."' src='".plugins_url('img/facenama.png', __FILE__)."' ></a></div>";
+
     }
 
     if(get_option("social-share-hammihan") == 1)
     {
-        $html = $html . "<div class='hammihan'><a target='_blank' href='http://facenama.com/links/?url=" . $url . "'>Hammihan</a></div>";
+        $html = $html . "<div class='hammihan'><a target='_blank' href='http://hammihan.com/links/?url=" . $url . "'><img   title='".__('Hammihan')."' class='click-icons' alt='".__('Hammihan:')."' src='".plugins_url('img/hammihan.png', __FILE__)."' ></a></div>";
+       
     }
 
    
     if(get_option("social-share-twitter") == 1)
     {
-        $html = $html . "<div class='twitter'><a target='_blank' href='https://twitter.com/share?url=" . $url . "'>Twitter</a></div>";
-    }
+         $html = $html . "<div class='twitter'><a target='_blank' href='https://twitter.com/share?url=" . $url . "'><img   title='".__('Twitter')."' class='click-icons' alt='".__('Twitter:')."' src='".plugins_url('img/twitter.png', __FILE__)."' ></a></div>";
 
-    if(get_option("social-share-linkedin") == 1)
-    {
-        $html = $html . "<div class='linkedin'><a target='_blank' href='http://www.linkedin.com/shareArticle?url=" . $url . "'>LinkedIn</a></div>";
     }
 
     if(get_option("social-share-reddit") == 1)
     {
-        $html = $html . "<div class='reddit'><a target='_blank' href='http://reddit.com/submit?url=" . $url . "'>Reddit</a></div>";
+        $html = $html . "<div class='linkedin'><a target='_blank' href='http://www.linkedin.com/shareArticle?url=" . $url . "'><img   title='".__('Linkedin')."' class='click-icons' alt='".__('Linkedin:')."' src='".plugins_url('img/linkedin.png', __FILE__)."' ></a></div>";
+       
+    }
+
+    if(get_option("social-share-reddit") == 1)
+    {
+       
+        $html = $html . "<div class='reddit'><a target='_blank' href='http://reddit.com/submit?url=" . $url . "'><img   title='".__('Reddit')."' class='click-icons' alt='".__('Reddit:')."' src='".plugins_url('img/reddit.png', __FILE__)."' ></a></div>";
+        
     }
 
      if(get_option("social-share-facebook") == 1)
     {
-        $html = $html . "<div class='facebook'><a target='_blank' href='http://www.facebook.com/sharer.php?u=" . $url . "'>Facebook</a></div>";
+       
+        
+        $html = $html . "<div class='facebook'><a target='_blank' href='http://www.facebook.com/sharer.php?u=" . $url . "'><img   title='".__('Facebook')."' class='click-icons' alt='".__('Facebook:')."' src='".plugins_url('img/facebook.png', __FILE__)."' ></a></div>";
+       
     }
 
 

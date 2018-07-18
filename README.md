@@ -36,6 +36,9 @@ GNU General Public License for more details.
 
 
 ## Changelog
+* v1.2 released: July 19, 2018
+*Changing text icons to image icons
+
 * v1 released: July 10, 2018
 Initial release
 

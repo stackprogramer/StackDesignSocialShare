@@ -3,7 +3,7 @@
 * Plugin Name: Stack Design Social Share
 * Plugin URI: https://blog.stackprogramer.xyz/
 * Description: A plugin for persian and english social netowrk.
-* Version: 1.1 
+* Version: 1.2
 * Author: stackprogramer
 * Author URI: https://blog.stackprogramer.xyz/
 * License: GPLV3

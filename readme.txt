@@ -23,7 +23,9 @@ Upload the stack design social share  plugin to your blog, Activate it,in settin
 
 
 == Changelog ==
-
+=1.2=
+*Release Date -July 18, 2018*
+* Changing text icons to image icons
 
 =1.0=
 *Release Date -July 10, 2018*
