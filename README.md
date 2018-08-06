@@ -36,6 +36,9 @@ GNU General Public License for more details.
 
 
 ## Changelog
+* v1.3 released: August 6, 2018
+*Adding translation language files
+
 * v1.2 released: July 19, 2018
 *Changing text icons to image icons
 

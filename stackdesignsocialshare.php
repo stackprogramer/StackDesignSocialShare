@@ -1,12 +1,14 @@
 <?php
 /**
 * Plugin Name: Stack Design Social Share
-* Plugin URI: https://blog.stackprogramer.xyz/
+* Plugin URI:https://blog.stackprogramer.xyz/%d8%a7%d9%86%d8%aa%d8%b4%d8%a7%d8%b1-%d9%be%d9%84%d8%a7%da%af%db%8c%d9%86-%d9%88%d8%b1%d8%af%d9%be%d8%b1%d8%b3-%d8%af%da%a9%d9%85%d9%87-%d8%a7%d8%b4%d8%aa%d8%b1%d8%a7%da%a9-%da%af%d8%b0%d8%a7%d8%b4/
 * Description: A plugin for persian and english social netowrk.
-* Version: 1.2
+* Version: 1.3
 * Author: stackprogramer
 * Author URI: https://blog.stackprogramer.xyz/
 * License: GPLV3
+* Text Domain: StackDesignSocialShare
+* Domain Path: /languages
 */
 function social_share_menu_item()
 {

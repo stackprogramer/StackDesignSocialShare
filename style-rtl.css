@@ -1,26 +1,26 @@
 .social-share-wrapper div
 {
-  float:right;
-  margin-right: 10px;
+	float:right;
+	margin-right: 10px;
 
 }
 
 .social-share-wrapper div.share-on
 {
-  padding: 5px;
+	padding: 5px;
 }
 
 
 
 .social-share-wrapper div a
 {
-  text-decoration: none;
-  border: none;
+	text-decoration: none;
+	border: none;
 }
 /*
 .clear
 {
-  clear:right;
+	clear:right;
 }*/
 
 .click-icons{ 
