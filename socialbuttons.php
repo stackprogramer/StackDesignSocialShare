@@ -64,7 +64,7 @@ function add_social_share_icons($content)
 add_filter("the_content", "add_social_share_icons");
 function social_share_style() 
 {
-        if ( is_rtl() ) {
+        if ( get_locale()==('fa_IR') ) {
             wp_register_style("social-share-style-file", plugin_dir_url(__FILE__) . "style-rtl.css");
             wp_enqueue_style("social-share-style-file");
         }else{

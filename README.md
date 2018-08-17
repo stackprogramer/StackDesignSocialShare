@@ -36,6 +36,8 @@ GNU General Public License for more details.
 
 
 ## Changelog
+* v1.5 released: August 17, 2018
+Fixed isrtl changed to getlocale case
 * v1.4 released: August 9, 2018
 Changed Icons to Rounded Images
 
