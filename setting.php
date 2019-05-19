@@ -3,6 +3,7 @@ function social_share_settings()
 {
     add_settings_section("social_share_config_section", "", null, "social-share");
 
+    add_settings_field("social-share-nofollow", "Do you want to not follow social links", "social_share_nofollow_checkbox", "social-share", "social_share_config_section"); 
     add_settings_field("social-share-cloob", "Do you want to display Cloob share button?", "social_share_cloob_checkbox", "social-share", "social_share_config_section"); 
    add_settings_field("social-share-facenama", "Do you want to display facenama share button?", "social_share_facenama_checkbox", "social-share", "social_share_config_section"); 
     add_settings_field("social-share-hammihan", "Do you want to display hammihan share button?", "social_share_hammihan_checkbox", "social-share", "social_share_config_section"); 
@@ -11,7 +12,7 @@ function social_share_settings()
     add_settings_field("social-share-reddit", "Do you want to display Reddit share button?", "social_share_reddit_checkbox", "social-share", "social_share_config_section");
     add_settings_field("social-share-facebook", "Do you want to display Facebook share button?", "social_share_facebook_checkbox", "social-share", "social_share_config_section");
 
- 
+    register_setting("social_share_config_section", "social-share-nofollow");
     register_setting("social_share_config_section", "social-share-cloob");
     register_setting("social_share_config_section", "social-share-facenama");
     register_setting("social_share_config_section", "social-share-hammihan");
@@ -22,6 +23,12 @@ function social_share_settings()
 
 }
  
+function social_share_nofollow_checkbox()
+{  
+   ?>
+        <input type="checkbox" name="social-share-nofollow" value="1" <?php checked(1, get_option('social-share-nofollow'), true); ?> /> Check for Yes
+   <?php
+}
 
 function social_share_cloob_checkbox()
 {  
